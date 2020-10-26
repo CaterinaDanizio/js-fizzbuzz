@@ -9,24 +9,24 @@ for (var i = 1; i < 101; i++ ){
   // Print "Fizz" for number that are multiple of 3
   if (i % 3 == 0 && i % 5 != 0) {
     console.log("Fizz");
-    document.getElementById('numero').innerHTML = numero + "<li>" + "Fizz" + "</li>";
+    document.getElementById('numero').innerHTML += "<li>" + "Fizz" + "</li>";
   }
 
   // Print "Buzz" for number that are multiple of 5
   else if (i % 5 == 0 && i % 3 != 0) {
     console.log("Buzz");
-    document.getElementById('numero').innerHTML = numero + "<li>" + "Buzz" + "</li>";
+    document.getElementById('numero').innerHTML += "<li>" + "Buzz" + "</li>";
   }
   // Print "FizzBuzz" for number that are multiple of 3 and 5
 
   else if (i % 5 == 0 && i % 3 == 0) {
     console.log("FizzBuzz");
-    document.getElementById('numero').innerHTML = numero + "<li>" + "FizzBuzz" + "</li>";
+    document.getElementById('numero').innerHTML += "<li>" + "FizzBuzz" + "</li>";
   }
 
   else {
     console.log(i);
-    document.getElementById('numero').innerHTML = numero + "<li>" + i + "</li>";
+    document.getElementById('numero').innerHTML += "<li>" + i + "</li>";
   }
 
 };
